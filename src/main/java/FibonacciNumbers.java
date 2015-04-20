@@ -26,15 +26,15 @@ public class FibonacciNumbers {
     }
 
     public static ArrayList<Integer> fillArray(int lastValue, int firstValue, int secondValue) {
-        ArrayList<Integer> tempList = new ArrayList<Integer>();
+        ArrayList<Integer> fillList = new ArrayList<Integer>();
         int tempValue = 0;
         while (tempValue < lastValue) {
-            tempList.add(firstValue);
+            fillList.add(firstValue);
             tempValue = secondValue;
             secondValue = firstValue + secondValue;
             firstValue = tempValue;
         }
-        return tempList;
+        return fillList;
     }
 
     public static ArrayList<Integer> allEvenValue(ArrayList<Integer> tempList) {
